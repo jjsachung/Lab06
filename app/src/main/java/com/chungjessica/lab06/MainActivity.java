@@ -9,12 +9,16 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.SeekBar;
 
 public class MainActivity extends AppCompatActivity {
 
     ViewPager2 mViewPager2;
     RecyclerView.Adapter mMyFragmentStateAdapter;
-    int NUM_ITEMS = 6;
+    int NUM_ITEMS = 3;
+    SeekBar shibaseek;
+    ImageView shibapup, shibadog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
