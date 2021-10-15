@@ -3,4 +3,9 @@
     <string name="press_me">Press me!</string>
     <string name="dog">dog</string>
     <string name="puppy">puppy</string>
+    <string-array name="breeds">
+        <item>Shiba</item>
+        <item>Golden Retriever</item>
+        <item>Samoyed</item>
+    </string-array>
 </resources>

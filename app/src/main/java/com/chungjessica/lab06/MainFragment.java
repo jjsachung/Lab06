@@ -40,12 +40,8 @@ public class MainFragment extends Fragment {
         //add to tablayout
         TabLayout tabLayout = getActivity().findViewById(R.id.tab_layout);
         new TabLayoutMediator(tabLayout, mViewPager2,
-                (tab, position) -> tab.setText("I am  " + (position + 1))
+                (tab, position) -> tab.setText(getResources().getStringArray(R.array.breeds)[position])
         ).attach();
-        //access the button
-        Button mButton = view.findViewById(R.id.pressme);
-        //set text to identify fragment position
-        mButton.setText("Press " + position);
         opacity = view.findViewById(R.id.opacity_seekbar);
         shibapup = view.findViewById(R.id.shiba_puppy);
         shibadog = view.findViewById(R.id.shiba_dog);
